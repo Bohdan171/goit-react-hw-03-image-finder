@@ -1,10 +1,16 @@
-import DotLoader from 'react-spinners/ClipLoader';
-import s from './Loader.module.css';
+import { ThreeDots } from 'react-loader-spinner';
 
-export default function Loader() {
+export const Loader = () => {
   return (
-    <div className={s.overlay}>
-      <DotLoader size={250} color={'#461646'} className={s.loader} />
-    </div>
+    <ThreeDots
+      height="80"
+      width="80"
+      radius="9"
+      color="#880e1e"
+      ariaLabel="three-dots-loading"
+      wrapperStyle={{}}
+      wrapperClassName=""
+      visible={true}
+    />
   );
-}
+};
